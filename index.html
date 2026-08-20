@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ramla & Mohamed ♡</title><link rel="stylesheet" href="style.css"></head><body>
+    
+<div class="music-player">
+    <div class="music-icon">🎵</div>
+
+    <div class="song-info">
+        <h3>Our Song 💕</h3>
+        <p>Play their song...</p>
+    </div>
+
+    <button id="playBtn">▶</button>
+    <button id="pauseBtn">⏸</button>
+
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+
+    <audio id="song" src="audio/Ed Sheeran - Perfect.mp3"></audio>
+</div>
+
+
+<div class="petals">♡　✦　♡　✧　♡</div>
+<nav><a href="#story">Our Story</a><a href="#care">Our Language</a><a href="#future">Our Future</a></nav>
+<header class="hero"><img src="images/ramla-mohamed.jpg" alt="Ramla and Mohamed"><div class="intro"><small>Written by Ramla, with love ♡</small><h1>Ramla <i>&</i> Mohamed</h1><p>Two people. One little world. A thousand ways of saying, “I'm here.”</p><a href="#story">Read our story ↓</a></div></header>
+<main>
+<section id="story"><small>01 · From Ramla</small><h2>To the person who became my safe place.</h2><div class="letter"><p>Mohamed,</p><p>I don't think love is always about grand gestures. Sometimes it's hidden inside the smallest things — a phone call, a “where are you?”, a little confrontation, or a sweet word at exactly the right moment.</p><p>Sometimes I worry when you don't pick up the phone. And yes, I might confront you about it. But underneath that little complaint is a very simple question: <em>Are you okay? Are you there? Do you know that I care?</em></p><p>Somehow, that became part of our language. We don't always say “I missed you” perfectly. Sometimes we say it by checking in, worrying, teasing, calling again, or refusing to let the other person carry a bad feeling alone.</p><b>— Ramla ♡</b></div></section>
+<section id="care" class="rose"><small>02 · The way we care</small><h2>Our arguments are sometimes just hugs wearing different clothes.</h2><div class="grid">
+<article>📱<h3>“Why didn't you pick up?”</h3><p>It sounds like a complaint. But sometimes it really means, “I was thinking about you. Please let me know you're okay.”</p></article>
+<article>🤍<h3>“Are you okay?”</h3><p>Behind the question is a quiet promise: whatever is happening, you don't have to face it alone.</p></article>
+<article>🌙<h3>“Don't sleep angry.”</h3><p>Neither of us wants the last thing between us to be anger. We'd rather talk, soften, forgive and find our way back.</p></article>
+<article>💌<h3>The sweet talker</h3><p>Mohamed has a special talent for turning a serious moment into something softer with a few carefully chosen words.</p></article>
+</div></section>
+<section><small>03 · What he means to me</small><h2>Thank you for being the kind of person who stays.</h2><div class="quote"><strong>“</strong><p>You've supported me in ways that I will never take for granted. You have been there through the anxious moments, difficult days, little disagreements and moments when I simply needed to know that someone was beside me.</p><p>I appreciate you more than I can put into one page. I love you, Mohamed, and I hope the future gives us many more ordinary days together — because ordinary days with you don't feel ordinary to me.</p><strong>”</strong></div></section>
+<section id="future" class="dark"><small>04 · A wish for tomorrow</small><h2>I don't just want a moment. I want a future.</h2><div class="future"><span>☾</span><p>I hope we keep choosing each other through busy days, silly arguments, unexpected problems, celebrations and everything in between.</p><p>I hope we keep learning each other's hearts. I hope I keep being the person who asks, “Why didn't you pick up?” and you keep being the person who makes sure I never have to sleep angry with you.</p><p>And if life lets me have one wish, I'd love for the story I'm writing today to become the life we're living tomorrow.</p><b>♡</b></div></section>
+<section><small>05 · Just us</small><h2>Maybe this is what love looks like.</h2><p class="final">Not perfect. Not silent. Not without little arguments. Just two people who care enough to keep asking, keep talking, keep forgiving, keep showing up — and keep choosing each other.</p><div class="names">Ramla <b>♡</b> Mohamed</div><p class="closing">“If I ever sound like I'm complaining too much, remember that sometimes that's just my way of saying I love you.” ♡</p></section>
+</main><footer>Made with love, from Ramla to Mohamed ♡</footer><script src="script.js"></script> <script>
+    const song = document.getElementById("song");
+    const playBtn = document.getElementById("playBtn");
+    const pauseBtn = document.getElementById("pauseBtn");
+    const volume = document.getElementById("volume");
+
+    playBtn.addEventListener("click", () => {
+        song.play();
+    });
+
+    pauseBtn.addEventListener("click", () => {
+        song.pause();
+    });
+
+    volume.addEventListener("input", () => {
+        song.volume = volume.value;
+    });
+</script></body></html>
